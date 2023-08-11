@@ -17,8 +17,8 @@ public class restTest {
 
 	@GetMapping(value = "/")
 	public String sendMessage() throws InterruptedException {
-		mss.sendMessage("I am relaying via Kafka, Hello world !");
-System.out.println("Check the full code at: https://github.com/jagcoool/Spring-Kafka");
+		mss.sendMessage(
+				"I am relaying via Kafka, Hello world !, Check the full Project at: https://github.com/jagcoool/Spring-Kafka");
 		Thread.sleep(2000);
 		return mls.global;
 	}
